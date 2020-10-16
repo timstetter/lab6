@@ -15,7 +15,8 @@ public class DieRoleSimulation {
 			int dieOneValue = generateRandomDieRoll(sidesInput);
 			int dieTwoValue = generateRandomDieRoll(sidesInput);
 
-			System.out.println("You rolled a " + dieOneValue + " & " + dieTwoValue);
+			System.out.println("You rolled a " + dieOneValue + " and a " + dieTwoValue);
+			
 			crapsMessages(dieOneValue, dieTwoValue);
 			
 
@@ -36,8 +37,8 @@ public class DieRoleSimulation {
 			System.out.println("Snake Eyes!");
 		}else if (dieRoll1 == 6 && dieRoll2 == 6) {
 			System.out.println("Box Cars!");
-		}else if (dieRoll1 + dieRoll2 == 7) {
-			System.out.println("Craps!");
+		}else if ((dieRoll1 + dieRoll2 == 7) || (dieRoll1 + dieRoll2 == 11)) {
+			System.out.println("Craps! You're a Winner!");
 		}
 	}
 	
