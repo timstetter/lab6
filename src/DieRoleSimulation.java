@@ -15,7 +15,8 @@ public class DieRoleSimulation {
 			int dieOneValue = generateRandomDieRoll(sidesInput);
 			int dieTwoValue = generateRandomDieRoll(sidesInput);
 
-			System.out.println("You rolled a " + dieOneValue + " & a " + dieTwoValue);
+			System.out.println("You rolled a " + dieOneValue);
+			System.out.println("You rolled a " + dieTwoValue);
 			
 			crapsMessages(dieOneValue, dieTwoValue);
 			
