@@ -21,7 +21,7 @@ public class DieRoleSimulation {
 			crapsMessages(dieOneValue, dieTwoValue);
 			
 
-			keepRolling = Validator.getYesNo(scnr, "Roll again? (yes/no)? ");
+			keepRolling = Validator.getYesNo(scnr, "Roll again? (yes/no): ");
 		}
 		System.out.println("Thanks for playing!");
 		scnr.close();
